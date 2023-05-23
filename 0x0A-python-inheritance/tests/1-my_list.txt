@@ -1,0 +1,57 @@
+The "1-my_list" module
+======================
+
+using "print_sorted"
+----------------------
+
+Import the function:
+
+
+	>>> MyList = __import__('1-my_list').MyList
+
+
+Now test it:
+
+	>>> my_list = MyList()
+	>>> my_list.append(1)
+	>>> my_list.append(4)
+	>>> my_list.append(2)
+	>>> my_list.append(3)
+	>>> my_list.append(5)
+	>>> my_list
+	[1, 4, 2, 3, 5]
+	
+	>>> my_list.print_sorted()
+	[1, 2, 3, 4, 5]
+
+	>>> my_list = MyList()
+        >>> my_list.append('x')
+        >>> my_list.append(4)
+        >>> my_list.append(2)
+        >>> my_list.append(3)
+        >>> my_list.append(5)
+	>>> my_list
+	['x', 4, 2, 3, 5]
+
+	>>> my_list.print_sorted()
+	Traceback (most recent call last):
+	TypeError: '<' not supported between instances of 'int' and 'str'
+
+	>>> my_list = MyList()
+	>>> my_list
+	[]
+
+	>>> my_list.print_sorted()
+	[]
+
+	>>> my_list = MyList()
+	>>> my_list.append('x')
+        >>> my_list.append('k')
+        >>> my_list.append('o')
+        >>> my_list.append('g')
+        >>> my_list.append('e')
+	>>> my_list
+	['x', 'k', 'o', 'g', 'e']
+	
+	>>> my_list.print_sorted()
+	['e', 'g', 'k', 'o', 'x']
